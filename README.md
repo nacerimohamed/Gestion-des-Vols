@@ -146,91 +146,13 @@ git clone https://github.com/votre-username/jetex-vols.git
 cd jetex-vols
 npm install
 npm start
-
+```
 
 
 Application disponible sur :
 
 http://localhost:3000
 
-📖📖 Guide d’Utilisation
-
-1️⃣ Recherche de Vol
-
-Entrer ville départ
-
-Entrer ville arrivée
-
-Cliquer Rechercher
-
-2️⃣ Sélection Vol
-
-Cliquer sur Sélectionner
-
-Redirection vers services
-
-3️⃣ Ajout Services
-
-Cocher services
-
-Voir total en temps réel
-
-Confirmer
-
-4️⃣ Facturation
-
-Vérifier facture
-
-Confirmer réservation
-
-🏗 Architecture Redux
-
-Store :
-
-flights: flightSlice
-
-services: servicesSlice
-
-Flight Slice :
-
-fetchFlights
-
-setSearchCriteria
-
-filterFlights
-
-selectFlight
-
-updateFlightServices
-
-Services Slice :
-
-toggleService
-
-resetServices
-
-confirmerReservation
-
-🌐 API
-
-Endpoint :
-
-https://gahi-said.com/apis/vols.php
-
-
-Format :
-
-{
-  "vols": [
-    {
-      "id": "F123",
-      "villeDepart": "Rabat",
-      "villeArrivee": "Dubai",
-      "date": "25-12-2024",
-      "prix": 2500
-    }
-  ]
-}
 
 🧪 Tests Manuels
 | Fonction  | Test          | Résultat    |
