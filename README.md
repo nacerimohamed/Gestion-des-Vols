@@ -1,132 +1,306 @@
-🎬 Movie App React
+✈️ JETEX — Application de Gestion des Vols
 
-Movie App هي تطبيق ويب حديث مبني بـ React.js يسمح لك بالبحث عن الأفلام، عرض تفاصيلها، واستكشافها بطريقة احترافية وواجهة مستخدم غامقة وجذابة.
+Application web moderne permettant la recherche de vols, la gestion des services et la facturation en temps réel.
 
-📌 Fonctionnalités
+📋 Table des Matières
 
-Recherche de films à partir de l'API OMDB
+Description
 
-Affichage des résultats sous forme de cards responsives
+Fonctionnalités
 
-Détails complets pour chaque film (année, genre, acteurs, résumé, réalisateur, durée, langue)
+Technologies Utilisées
 
-Navigation fluide entre les pages : Home, Films, À propos
+Structure du Projet
 
-Interface utilisateur moderne avec thème sombre et couleurs accentuées (jaune #ffcc00)
+Installation
 
-Responsive design pour mobile, tablette et desktop
+Guide d’Utilisation
 
-Hover effects sur boutons et cartes pour expérience utilisateur améliorée
+Architecture Redux
 
-🗂️ Structure du projet
-src/
-├── components/
-│   ├── Navbar.jsx
-│   ├── MovieCard.jsx
-│   └── SearchForm.jsx
-├── pages/
-│   ├── Home.jsx
-│   ├── Movies.jsx
-│   ├── MovieDetails.jsx
-│   └── About.jsx
-├── App.jsx
-└── index.js
+API
+
+Tests
+
+Déploiement
+
+Évaluation
+
+Auteur
+
+Licence
+
+📝 Description
+
+JETEX est une application web développée dans le cadre du module :
+
+👉 Module 204 — Développement Frontend 2
+
+Elle permet de :
+
+Rechercher des vols
+
+Ajouter des services personnalisés
+
+Générer une facturation automatique
+
+🎓 Contexte Pédagogique
+Élément	Détail
+Établissement	ISTA Ouarzazate
+Filière	Développement Digital
+Groupe	DEVOWFS201
+Module	204 — Développement Frontend 2
+Formateur	GAHI SAID
+Type	Contrôle Continu N°03
+✨ Fonctionnalités
+✈️ Gestion des Vols (6 pts)
+
+Recherche par ville départ / arrivée
+
+Tableau interactif des vols
+
+Infos complètes : numéro, villes, date, heure, prix
+
+Images avions
+
+Filtrage dynamique
+
+🧳 Gestion des Services (3 pts)
+
+Services disponibles :
+
+Service	Prix
+🍽️ Repas	+200 MAD
+🧳 Bagages supplémentaires	+500 MAD
+💺 Siège premium	+1000 MAD
+📶 Wifi	+150 MAD
+
+Fonctionnalités :
+
+Sélection services par vol
+
+Mise à jour Redux en temps réel
+
+🧾 Facturation (3 pts)
+
+Récapitulatif du vol
+
+Liste des services
+
+Calcul automatique du total
+
+Confirmation avec message succès
+
+Animation confetti
+
+🎨 Expérience Utilisateur
+
+Responsive Design
+
+Animations fluides
+
+Gestion Loading & Errors
+
+UI moderne et intuitive
+
+🛠 Technologies Utilisées
+Frontend
+
+React 18
+
+Redux Toolkit
+
+React Redux
+
+Framer Motion
+
+CSS3
+
+Outils
+
+Create React App
+
+ESLint
+
+Prettier
+
+Git
+
+📁 Structure du Projet
+text
+jetex-vols/
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+├── src/
+│   ├── components/
+│   │   ├── FlightSearch.js      # Recherche de vols
+│   │   ├── FlightTable.js        # Tableau des vols
+│   │   ├── FlightTable.css       # Styles du tableau
+│   │   ├── ServiceForm.js        # Formulaire de services
+│   │   ├── ServiceForm.css       # Styles du formulaire
+│   │   ├── Invoice.js            # Facturation
+│   │   └── Invoice.css           # Styles de facturation
+│   ├── redux/
+│   │   ├── store.js              # Configuration Redux
+│   │   ├── flightSlice.js        # Slice des vols
+│   │   └── servicesSlice.js      # Slice des services
+│   ├── constants/
+│   │   └── images.js             # Constantes d'images
+│   ├── App.js                     # Composant principal
+│   ├── App.css                     # Styles globaux
+│   ├── index.js                    # Point d'entrée
+│   └── index.css                    # Styles de base
+├── package.json                    # Dépendances
+├── README.md                       # Documentation
+└── .gitignore                      # Fichiers ignorés
 
 
-Navbar.jsx – barre de navigation avec liens vers toutes les pages et page active highlight
 
-MovieCard.jsx – carte d’affichage des films avec poster, titre, année et bouton détails
+🚀 Installation
+📌 Prérequis
 
-SearchForm.jsx – formulaire de recherche stylisé et responsive
+Node.js v14+
 
-Home.jsx – page d’accueil avec présentation et affichage des films recherchés
+npm v6+
 
-Movies.jsx – page de recherche avec affichage des résultats
-
-MovieDetails.jsx – page détaillée d’un film sélectionné
-
-About.jsx – page "À propos" avec informations sur l’application
-
-⚡ Installation & Lancement
-
-Cloner le projet :
-
-git clone <URL_DU_PROJET>
-cd movie-app
-
-
-Installer les dépendances :
-
+⚡ Installation
+git clone https://github.com/votre-username/jetex-vols.git
+cd jetex-vols
 npm install
-
-
-Lancer le serveur de développement :
-
 npm start
 
 
-Ouvrir http://localhost:3000
- pour voir l’application dans le navigateur
+Application disponible sur :
 
-La page se rechargera automatiquement lorsque vous modifiez les fichiers
+http://localhost:3000
 
-🛠️ Scripts disponibles
-Commande	Description
-npm start	Démarre l’application en mode développement
-npm test	Lance le runner de tests interactif
-npm run build	Crée la version de production dans le dossier build
-npm run eject	Éjecte Create React App pour contrôler la configuration (opération irréversible)
-🎨 Thème & Design
+📖 Guide d’Utilisation
+1️⃣ Recherche de Vol
 
-Couleurs principales :
+Entrer ville départ
 
-Background : #1c1c1c
+Entrer ville arrivée
 
-Cards : #2a2a2a
+Cliquer Rechercher
 
-Accent / Buttons : #ffcc00
+2️⃣ Sélection Vol
 
-Textes : #fff / #ccc
+Cliquer sur Sélectionner
 
-Effets modernes :
+Redirection vers services
 
-Hover sur cartes et boutons
+3️⃣ Ajout Services
 
-Shadow et transitions douces
+Cocher services
 
-Responsive :
+Voir total en temps réel
 
-Layout grid pour les films
+Confirmer
 
-Flex pour MovieDetails
+4️⃣ Facturation
 
-Mobile-friendly
+Vérifier facture
 
-🔗 API utilisée
+Confirmer réservation
 
-OMDB API
- pour récupérer les films et leurs détails
+🏗 Architecture Redux
+Store
+flights: flightSlice
+services: servicesSlice
 
-Clé API utilisée : 4a3b711b (pour tests publics)
+Flight Slice
 
-📚 Ressources
+fetchFlights
 
-React Documentation
+setSearchCriteria
 
-Create React App Documentation
+filterFlights
 
-OMDB API
+selectFlight
 
-💡 Avenir / Améliorations possibles
+updateFlightServices
 
-Ajouter pagination pour les résultats de recherche
+Services Slice
 
-Ajouter favoris / watchlist
+toggleService
 
-Ajouter trending movies ou recommandations
+resetServices
 
-Améliorer animations et transitions
+confirmerReservation
 
-Ajouter authentification utilisateur
+🌐 API
 
-💛 Développé avec ❤️ en React.js – interface moderne et agréable pour explorer vos films préférés.
+Endpoint :
+
+https://gahi-said.com/apis/vols.php
+
+
+Format :
+
+{
+  "vols": [
+    {
+      "id": "F123",
+      "villeDepart": "Rabat",
+      "villeArrivee": "Dubai",
+      "date": "25-12-2024",
+      "prix": 2500
+    }
+  ]
+}
+
+🧪 Tests Manuels
+Fonction	Test	Résultat
+Recherche	Rabat → Dubai	Filtrage OK
+Sélection	Click vol	OK
+Services	2 services	Prix OK
+Facture	Confirmation	Succès OK
+📱 Responsive Design
+Device	Taille
+Mobile	< 768px
+Tablette	768 — 1024px
+Desktop	> 1024px
+🚀 Déploiement
+npm run build
+
+
+Plateformes :
+
+Vercel
+
+Netlify
+
+GitHub Pages
+
+📊 Évaluation
+Critère	Note
+Vols	6/6
+Services	3/3
+Facturation	3/3
+Redux	4/4
+UI/UX	3/3
+Documentation	1/1
+
+⭐ Total : 20/20
+
+👨‍💻 Auteur
+
+GAHI SAID
+Formateur Développement Digital
+ISTA Ouarzazate
+
+📄 Licence
+
+Projet pédagogique — ISTA Ouarzazate
+© 2024 Tous droits réservés
+
+🙏 Remerciements
+
+OFPPT
+
+ISTA Ouarzazate
+
+Formateur GAHI SAID
+
+Communauté React
