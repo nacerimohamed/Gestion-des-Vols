@@ -104,7 +104,7 @@ Fonctionnalités :
 ---
 
 ## 📁 Structure du Projet
-
+```
 jetex-vols/
 ├── public/
 │   ├── index.html
@@ -131,7 +131,7 @@ jetex-vols/
 ├── package.json                    # Dépendances
 ├── README.md                       # Documentation
 └── .gitignore                      # Fichiers ignorés
-
+```
 
 
 
