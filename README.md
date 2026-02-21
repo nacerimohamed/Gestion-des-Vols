@@ -4,7 +4,7 @@ Application web moderne permettant la recherche de vols, la gestion des services
 
 ## 📸 Aperçu de l'application
 
-![Aperçu Application](./assets/screenshot.png)
+![Aperçu Application](Capture.PNG)
 
 
 # le site
