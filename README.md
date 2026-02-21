@@ -2,6 +2,11 @@
 
 Application web moderne permettant la recherche de vols, la gestion des services et la facturation en temps réel.
 
+## 📸 Aperçu de l'application
+
+![Aperçu Application](./assets/screenshot.png)
+
+
 # le site
 https://gestion-des-vols.vercel.app/
 
